@@ -2,6 +2,8 @@ FROM ubuntu
 
 MAINTAINER Chinrubber <admin@chirubber.com>
 
+LABEL "Version"="5.6.30"
+
 RUN echo 'deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti' | tee /etc/apt/sources.list.d/100-ubnt-unifi.list && \
 	apt-get update && \
 	apt-get install wget -y && \
